@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Code2, Coffee, Rocket } from "lucide-react";
 import SectionHeading from "./SectionHeading";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -26,16 +27,13 @@ export default function AboutSection() {
               {/* Gradient border glow */}
               <div className="absolute -inset-1 bg-gradient-to-br from-primary to-secondary rounded-2xl blur-md opacity-50" />
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden bg-surface border border-border">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-secondary mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-4xl font-bold text-white">RA</span>
-                    </div>
-                    <p className="text-text-secondary text-sm font-mono">
-                      {"<Developer />"}
-                    </p>
-                  </div>
-                </div>
+                <Image
+                  src="/image.png"
+                  alt="Developer Profile"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               {/* Floating badges */}
@@ -75,7 +73,7 @@ export default function AboutSection() {
             </h3>
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                Hi there! I&apos;m Raiyan Ahmed, a Full Stack Developer with a
+                Hi there! I&apos;m Tauhid Hossen, a Full Stack Developer with a
                 deep passion for creating beautiful, functional, and
                 user-centered digital experiences. I have a strong foundation in
                 both frontend and backend technologies.
@@ -98,8 +96,8 @@ export default function AboutSection() {
             {/* Quick stats */}
             <div className="grid grid-cols-3 gap-4 mt-8">
               {[
-                { number: "2+", label: "Years Experience" },
-                { number: "20+", label: "Projects Completed" },
+                { number: "1+", label: "Years Experience" },
+                { number: "15+", label: "Projects Completed" },
                 { number: "10+", label: "Technologies" },
               ].map((stat) => (
                 <div

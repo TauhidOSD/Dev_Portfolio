@@ -13,7 +13,7 @@ const codeLines = [
   { text: "", cls: "" },
   { text: "  name", cls: "syntax-variable" },
   { text: ": ", cls: "syntax-operator" },
-  { text: '"Raiyan Ahmed"', cls: "syntax-string" },
+  { text: '"Tauhid Hossen"', cls: "syntax-string" },
   { text: ",", cls: "syntax-bracket" },
   { text: "  role", cls: "syntax-variable" },
   { text: ": ", cls: "syntax-operator" },
@@ -43,7 +43,7 @@ const codeLines = [
 
 // Build full lines of code for display
 const fullCode = `const developer = {
-  name: "Raiyan Ahmed",
+  name: "Tauhid Hossen",
   role: "Full Stack Developer",
   skills: ["React", "Next.js", "Node.js"],
   passion: "Building amazing apps",
@@ -142,9 +142,8 @@ export default function HeroSection() {
                       }}
                     />
                     <span
-                      className={`inline-block w-2 h-4 bg-primary ml-0.5 align-middle ${
-                        isTypingDone ? "animate-blink" : ""
-                      }`}
+                      className={`inline-block w-2 h-4 bg-primary ml-0.5 align-middle ${isTypingDone ? "animate-blink" : ""
+                        }`}
                     />
                   </pre>
                 </div>
@@ -170,9 +169,9 @@ export default function HeroSection() {
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
               <span className="text-text-primary">I&apos;m </span>
-              <span className="gradient-text">Raiyan</span>
+              <span className="gradient-text">Tauhid</span>
               <br />
-              <span className="gradient-text">Ahmed</span>
+              <span className="gradient-text">Hossen</span>
             </h1>
 
             <motion.div
@@ -223,8 +222,8 @@ export default function HeroSection() {
               className="flex gap-4 mt-8 justify-center lg:justify-start"
             >
               {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
+                { icon: Github, href: "https://github.com/TauhidOSD", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/tauhid-hossen/", label: "LinkedIn" },
               ].map((social) => (
                 <a
                   key={social.label}

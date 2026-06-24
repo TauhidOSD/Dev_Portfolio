@@ -60,11 +60,10 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "glass border-b border-border shadow-lg shadow-primary/5"
-            : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+          ? "glass border-b border-border shadow-lg shadow-primary/5"
+          : "bg-transparent"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -74,10 +73,10 @@ export default function Navbar() {
               className="flex items-center gap-2 group cursor-pointer"
             >
               <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300">
-                <span className="text-white font-bold text-lg">R</span>
+                <span className="text-white font-bold text-lg">T</span>
               </div>
               <span className="text-xl font-bold text-text-primary hidden sm:block">
-                Raiyan
+                Tauhid_Dev
                 <span className="text-primary">.</span>
               </span>
             </button>
@@ -88,11 +87,10 @@ export default function Navbar() {
                 <button
                   key={item.name}
                   onClick={() => scrollTo(item.href)}
-                  className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 cursor-pointer ${
-                    activeSection === item.href.slice(1)
-                      ? "text-primary"
-                      : "text-text-secondary hover:text-text-primary"
-                  }`}
+                  className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 cursor-pointer ${activeSection === item.href.slice(1)
+                    ? "text-primary"
+                    : "text-text-secondary hover:text-text-primary"
+                    }`}
                 >
                   {item.name}
                   {activeSection === item.href.slice(1) && (
@@ -150,11 +148,10 @@ export default function Navbar() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.1 }}
                     onClick={() => scrollTo(item.href)}
-                    className={`px-4 py-3 text-left text-lg font-medium rounded-lg transition-all cursor-pointer ${
-                      activeSection === item.href.slice(1)
-                        ? "text-primary bg-primary/10"
-                        : "text-text-secondary hover:text-text-primary hover:bg-surface-hover"
-                    }`}
+                    className={`px-4 py-3 text-left text-lg font-medium rounded-lg transition-all cursor-pointer ${activeSection === item.href.slice(1)
+                      ? "text-primary bg-primary/10"
+                      : "text-text-secondary hover:text-text-primary hover:bg-surface-hover"
+                      }`}
                   >
                     {item.name}
                   </motion.button>
