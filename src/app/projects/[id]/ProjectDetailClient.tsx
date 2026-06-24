@@ -28,8 +28,7 @@ export default function ProjectDetailClient({
           >
             <Link
               href="/#projects"
-              className="inline-flex items-center gap-2 text-text-secondary hover:text-primary
-                         transition-colors mb-8 group"
+              className="inline-flex items-center gap-2 text-text-secondary hover:text-primary transition-colors mb-8 group"
             >
               <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
               Back to Projects
@@ -120,9 +119,7 @@ export default function ProjectDetailClient({
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r
-                           from-primary to-primary-dark text-white font-medium
-                           hover:shadow-lg hover:shadow-primary/30 transition-all duration-300"
+                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-primary to-primary-dark text-white font-medium hover:shadow-lg hover:shadow-primary/30 transition-all duration-300"
               >
                 <ExternalLink className="w-5 h-5" />
                 Live Demo
@@ -131,9 +128,7 @@ export default function ProjectDetailClient({
                 href={project.repoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-4 py-3 rounded-xl border border-border
-                           text-text-primary hover:border-primary hover:text-primary
-                           font-medium transition-all duration-300"
+                className="flex items-center gap-3 px-4 py-3 rounded-xl border border-border text-text-primary hover:border-primary hover:text-primary font-medium transition-all duration-300"
               >
                 <Github className="w-5 h-5" />
                 Source Code
@@ -155,9 +150,7 @@ export default function ProjectDetailClient({
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <Link
           href="/#projects"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border
-                     text-text-primary font-medium hover:border-primary hover:text-primary
-                     transition-all duration-300 group"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border text-text-primary font-medium hover:border-primary hover:text-primary transition-all duration-300 group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           Back to All Projects

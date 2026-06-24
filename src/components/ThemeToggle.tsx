@@ -19,10 +19,7 @@ export default function ThemeToggle() {
     <button
       id="theme-toggle"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="relative w-10 h-10 rounded-full flex items-center justify-center
-                 bg-surface hover:bg-surface-hover border border-border
-                 transition-all duration-300 hover:scale-110 hover:border-primary/50
-                 cursor-pointer"
+      className="relative w-10 h-10 rounded-full flex items-center justify-center bg-surface hover:bg-surface-hover border border-border transition-all duration-300 hover:scale-110 hover:border-primary/50 cursor-pointer"
       aria-label="Toggle theme"
     >
       <AnimatePresence mode="wait" initial={false}>

@@ -84,10 +84,7 @@ export default function ContactSection() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ y: -3 }}
-                  className={`w-12 h-12 rounded-xl bg-surface border border-border
-                             flex items-center justify-center text-text-secondary
-                             ${social.color} hover:border-primary/50 hover:shadow-lg
-                             transition-all duration-300`}
+                  className={`w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center text-text-secondary ${social.color} hover:border-primary/50 hover:shadow-lg transition-all duration-300`}
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />
@@ -125,10 +122,7 @@ export default function ContactSection() {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-surface border border-border
-                             text-text-primary placeholder-text-secondary
-                             focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary
-                             transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-xl bg-surface border border-border text-text-primary placeholder-text-secondary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300"
                   placeholder="John Doe"
                 />
               </div>
@@ -148,10 +142,7 @@ export default function ContactSection() {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-surface border border-border
-                             text-text-primary placeholder-text-secondary
-                             focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary
-                             transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-xl bg-surface border border-border text-text-primary placeholder-text-secondary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300"
                   placeholder="john@example.com"
                 />
               </div>
@@ -171,10 +162,7 @@ export default function ContactSection() {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-surface border border-border
-                             text-text-primary placeholder-text-secondary resize-none
-                             focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary
-                             transition-all duration-300"
+                  className="w-full px-4 py-3 rounded-xl bg-surface border border-border text-text-primary placeholder-text-secondary resize-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300"
                   placeholder="Tell me about your project..."
                 />
               </div>

@@ -11,8 +11,7 @@ export default function AvailableBadge() {
       className="flex items-center justify-center pt-24 md:pt-28 pb-2"
     >
       <div
-        className="flex items-center gap-2.5 px-4 py-2 rounded-full
-                   bg-green-glow/10 border border-green-glow/30"
+        className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-green-glow/10 border border-green-glow/30"
       >
         <span className="relative flex h-2.5 w-2.5">
           <span className="animate-pulse-glow absolute inline-flex h-full w-full rounded-full bg-green-glow opacity-75" />

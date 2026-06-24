@@ -73,8 +73,7 @@ export default function Navbar() {
               onClick={() => scrollTo("#home")}
               className="flex items-center gap-2 group cursor-pointer"
             >
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center
-                              group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300">
+              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300">
                 <span className="text-white font-bold text-lg">R</span>
               </div>
               <span className="text-xl font-bold text-text-primary hidden sm:block">
@@ -115,8 +114,7 @@ export default function Navbar() {
               <button
                 id="mobile-menu-toggle"
                 onClick={() => setMobileOpen(!mobileOpen)}
-                className="md:hidden w-10 h-10 rounded-lg flex items-center justify-center
-                           bg-surface border border-border hover:border-primary/50 transition-all cursor-pointer"
+                className="md:hidden w-10 h-10 rounded-lg flex items-center justify-center bg-surface border border-border hover:border-primary/50 transition-all cursor-pointer"
               >
                 {mobileOpen ? (
                   <X className="w-5 h-5 text-text-primary" />

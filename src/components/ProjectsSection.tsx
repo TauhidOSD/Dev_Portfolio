@@ -25,16 +25,12 @@ function ProjectCard({
     >
       <Link href={`/projects/${project.id}`} className="block group">
         <div
-          className="relative overflow-hidden rounded-2xl bg-surface border border-border
-                      hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10
-                      transition-all duration-500 cursor-pointer"
+          className="relative overflow-hidden rounded-2xl bg-surface border border-border hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer"
         >
           {/* Project Image */}
           <div className="relative h-52 sm:h-56 overflow-hidden">
             <div
-              className="w-full h-full bg-gradient-to-br from-primary/30 to-secondary/30
-                          flex items-center justify-center transition-transform duration-700
-                          group-hover:scale-110"
+              className="w-full h-full bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center transition-transform duration-700 group-hover:scale-110"
             >
               <div className="text-center">
                 <div className="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-sm mx-auto mb-3 flex items-center justify-center">
@@ -50,9 +46,7 @@ function ProjectCard({
 
             {/* Hover Overlay — slides up from bottom */}
             <div
-              className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent
-                          translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out
-                          flex items-end p-6"
+              className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-end p-6"
             >
               <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
                 <p className="text-white/90 text-sm leading-relaxed mb-4">
@@ -141,10 +135,7 @@ export default function ProjectsSection() {
           >
             <button
               onClick={() => setShowAll(!showAll)}
-              className="group flex items-center gap-2 px-8 py-3.5 rounded-xl
-                         border border-border text-text-primary font-semibold
-                         hover:border-primary hover:text-primary hover:shadow-lg
-                         hover:shadow-primary/10 transition-all duration-300 cursor-pointer"
+              className="group flex items-center gap-2 px-8 py-3.5 rounded-xl border border-border text-text-primary font-semibold hover:border-primary hover:text-primary hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 cursor-pointer"
             >
               {showAll ? "Show Less" : "Show All Projects"}
               <motion.span

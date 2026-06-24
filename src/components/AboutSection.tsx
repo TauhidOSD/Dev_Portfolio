@@ -42,24 +42,21 @@ export default function AboutSection() {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 3, delay: 0 }}
-                className="absolute -top-4 -right-4 w-14 h-14 rounded-xl bg-surface border border-border
-                           shadow-lg flex items-center justify-center"
+                className="absolute -top-4 -right-4 w-14 h-14 rounded-xl bg-surface border border-border shadow-lg flex items-center justify-center"
               >
                 <Code2 className="w-7 h-7 text-primary" />
               </motion.div>
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 3, delay: 1 }}
-                className="absolute -bottom-4 -left-4 w-14 h-14 rounded-xl bg-surface border border-border
-                           shadow-lg flex items-center justify-center"
+                className="absolute -bottom-4 -left-4 w-14 h-14 rounded-xl bg-surface border border-border shadow-lg flex items-center justify-center"
               >
                 <Coffee className="w-7 h-7 text-secondary" />
               </motion.div>
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 3, delay: 2 }}
-                className="absolute top-1/2 -right-6 w-14 h-14 rounded-xl bg-surface border border-border
-                           shadow-lg flex items-center justify-center"
+                className="absolute top-1/2 -right-6 w-14 h-14 rounded-xl bg-surface border border-border shadow-lg flex items-center justify-center"
               >
                 <Rocket className="w-7 h-7 text-primary-light" />
               </motion.div>
@@ -107,8 +104,7 @@ export default function AboutSection() {
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className="text-center p-4 rounded-xl bg-surface border border-border
-                             hover:border-primary/50 transition-all duration-300"
+                  className="text-center p-4 rounded-xl bg-surface border border-border hover:border-primary/50 transition-all duration-300"
                 >
                   <div className="text-2xl font-bold gradient-text">
                     {stat.number}

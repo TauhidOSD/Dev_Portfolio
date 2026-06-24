@@ -23,16 +23,12 @@ export default function CertificatesSection() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
               whileHover={{ y: -5 }}
-              className="group relative overflow-hidden rounded-2xl bg-surface border border-border
-                         hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10
-                         transition-all duration-300"
+              className="group relative overflow-hidden rounded-2xl bg-surface border border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
             >
               {/* Certificate Image Placeholder */}
               <div className="relative h-48 overflow-hidden">
                 <div
-                  className="w-full h-full bg-gradient-to-br from-primary/20 via-secondary/10 to-primary/20
-                              flex items-center justify-center transition-transform duration-500
-                              group-hover:scale-105"
+                  className="w-full h-full bg-gradient-to-br from-primary/20 via-secondary/10 to-primary/20 flex items-center justify-center transition-transform duration-500 group-hover:scale-105"
                 >
                   <div className="text-center">
                     <div className="w-16 h-16 rounded-full bg-primary/20 mx-auto mb-3 flex items-center justify-center">
@@ -58,8 +54,7 @@ export default function CertificatesSection() {
                   href={cert.credentialUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-primary font-medium
-                             hover:underline transition-all"
+                  className="inline-flex items-center gap-1.5 text-sm text-primary font-medium hover:underline transition-all"
                 >
                   View Credential
                   <ExternalLink className="w-3.5 h-3.5" />

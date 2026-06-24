@@ -1,10 +1,11 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import { skills, type Skill } from "@/data/skills";
 
-const skillIcons: Record<string, JSX.Element> = {
+const skillIcons: Record<string, React.JSX.Element> = {
   react: (
     <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
       <path d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" />
@@ -79,20 +80,16 @@ function SkillCard({ skill, index }: { skill: Skill; index: number }) {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
       whileHover={{ y: -8, scale: 1.02 }}
-      className="group relative p-6 rounded-2xl bg-surface border border-border
-                 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10
-                 transition-all duration-300 cursor-pointer"
+      className="group relative p-6 rounded-2xl bg-surface border border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 cursor-pointer"
     >
       {/* Glow effect on hover */}
       <div
-        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100
-                    bg-gradient-to-br from-primary/5 to-secondary/5 transition-opacity duration-300"
+        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 bg-gradient-to-br from-primary/5 to-secondary/5 transition-opacity duration-300"
       />
 
       <div className="relative flex flex-col items-center text-center gap-3">
         <div
-          className="w-16 h-16 rounded-xl flex items-center justify-center
-                      transition-all duration-300 group-hover:scale-110"
+          className="w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
           style={{
             backgroundColor: `${skill.color}15`,
             color: skill.color,
