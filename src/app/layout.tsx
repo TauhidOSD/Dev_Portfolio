@@ -3,7 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "Raiyan Ahmed | Full Stack Developer",
+  title: "Tauhid Hossen | Full Stack Developer",
   description:
     "Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. Building beautiful, performant, and scalable web applications.",
   keywords: [
